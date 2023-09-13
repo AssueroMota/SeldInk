@@ -1,0 +1,404 @@
+.banner {
+    @media (max-width: $tablet) {
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+        justify-content: center;
+    }
+
+    @media (min-width: 1025px) and (max-width: $desktop-2){
+        padding-top: 80px;
+    }
+
+    .banner__logo {
+        position: absolute;
+        z-index: 9;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        @media (max-width: $tablet) {
+            top: unset;
+            left: unset;
+            transform: unset;
+        }
+
+        img {
+            @media (max-width: $tablet) {
+                width: 60%;
+                display: flex;
+                margin: auto;
+                margin-top: 130px;
+            }
+        }
+    }
+
+    .banner__title-desktop {
+        text-align: center;
+        font-family: $fontPrimary;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%; 
+        letter-spacing: 2.6px;
+        text-transform: uppercase;
+        -webkit-text-stroke: 1px $white;
+        color: transparent;
+        @media (max-width: $tablet) {
+            display: none;
+        }
+    }
+
+    .banner__title-mobile {
+        text-align: center;
+        font-family: $fontPrimary;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%; 
+        letter-spacing: 2.6px;
+        text-transform: uppercase;
+        -webkit-text-stroke: 1px $white;
+        color: transparent;
+        @media (min-width: $tablet) {
+            display: none;
+        }
+    }
+
+    .banner__column-right {
+        @media (min-width: $tablet) {
+            margin: unset;
+            width: 100%;
+            height: 1000px;
+            overflow: hidden;
+        }
+
+        @media (max-width: $tablet) {
+            margin-top: 128px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        video {
+            width: 100%;
+            @media (max-width: $tablet) {
+                width: 100%;
+                border: none;
+                background: transparent;
+                margin: auto;
+                overflow: auto;
+            }
+        }
+
+        .banner__tattoo-selden-ink-columns {
+            display: flex;
+            align-items: baseline;
+        }
+
+        .banner__tattoo-social-media {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            bottom: 0;
+            transform: translate(-50%, -50%);
+
+            span {
+                padding-bottom: 32px;
+
+                &:last-child {
+                    padding-bottom: 0;
+                }
+            }
+
+            @media (max-width: $tablet){
+                display: none;
+            }
+        }
+
+        .banner__tattoo-more-about-us {
+            text-align: left;
+
+            @media (max-width: $tablet) {
+                margin: auto;
+            }
+
+            a {
+                background-color: $white;
+                font-family: $fontPrimary;
+                font-style: normal;
+                font-weight: $weight-5;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 0.06em;
+                color: $primary;
+                padding: 20px 55px;
+                display: flex;
+                align-items: center;
+                width: fit-content;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_72_76' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='20' height='20'%3E%3Crect width='20' height='20' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_72_76)'%3E%3Cpath d='M14.5833 13.75L13.3958 12.5833L15.1458 10.8333H2.5V9.16667H15.1458L13.4167 7.41667L14.6042 6.25L18.3333 10L14.5833 13.75Z' fill='%23101820'/%3E%3C/g%3E%3C/svg%3E%0A");
+                }
+            }
+        }
+
+        .banner__tattoo-world-mobile {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            @media (max-width: $tablet) {
+                margin-top: -32px;
+            }
+
+            h1 {
+                @media (max-width: $tablet) {
+                    z-index: 3;
+                }
+            }
+        }
+
+        .banner__tattoo-world {
+            font-family: $fontPrimary;
+            font-style: italic;
+            font-weight: 400;
+            font-size: 98px;
+            line-height: 100%;
+            text-align: center;
+            letter-spacing: 0.04em;
+            color: #F2F2F2;
+            position: relative;
+
+            .banner__tattoo-small-content {
+                font-family: $fontPrimary;
+                font-style: normal;
+                font-weight: $weight-1;
+                font-size: 16px!important;
+                line-height: 165%;
+                letter-spacing: 0.06em;
+                color: $secondary;
+                text-align: left;
+                width: 500px;
+                margin-bottom: 64px;
+            }
+
+            .banner__tattoo-small-title {
+                font-family: $fontPrimary;
+                font-style: italic;
+                font-weight: $weight-3;
+                font-size: 32px;
+                line-height: 100%;
+                color: $white;
+                margin: 0;
+                text-align: left;
+                margin-bottom: 64px;
+
+                @media (max-width: $tablet) {
+                    text-align: center;
+                }
+            }
+
+            .banner__tattoo-world-animation {
+                position: relative;
+                .animation {
+                    position: absolute;
+                    right: 0;
+                    top: 12px;
+                    width: 90%;
+                    padding: 20px;
+                    z-index: -1;
+                }
+            }
+
+            h1 {
+                font-family: $fontPrimary;
+                font-style: italic;
+                font-weight: 500;
+                font-size: 165px;
+                line-height: 100%;
+                text-transform: uppercase;
+                mix-blend-mode: normal;
+                background: transparent;
+                -webkit-text-stroke-width: 3px;
+                -webkit-text-stroke-color: $white;
+                color: transparent;
+                margin: 0;
+                margin-left: -150px;
+                text-align: left;
+
+                @media (max-width: $desktop-2){
+                    font-size: 120px;
+                }
+
+                @media (max-width: $desktop-1){
+                    font-size: 92px;
+                }
+
+                @media (max-width: $tablet){
+                    margin-left: 0;
+                    text-align: center;
+                    margin-bottom: 32px;
+                }
+
+                @media (max-width: $mobile){
+                    font-size: 64px;
+                }
+            }
+        }
+    }   
+
+    .banner__column-left {
+        @media (max-width: $tablet){
+            text-align: center;
+            margin-bottom: 81px;
+            margin-top: 50px;
+        }
+
+        // @media (min-width: $tablet) {
+            animation: loading 5s linear infinite;
+        // }
+
+        h1 {
+            font-family: $fontPrimary;
+            font-style: normal;
+            font-weight: $weight-5;
+            font-size: 36px;
+            line-height: 100%;
+            text-align: center;
+            color: $primary;
+            margin-top: 0;
+
+            @media (min-width: $tablet) {
+                text-align: left;
+                font-size: 62px;
+            }
+        }
+
+        .banner__description {
+            font-family: $fontPrimary;
+            font-style: normal;
+            font-weight: $weight-2;
+            font-size: $size-5;
+            line-height: 125%;
+            text-align: center;
+            color: $secondary;
+            margin-bottom: 27px;
+            @media (min-width: $tablet) {
+                text-align: left;
+                font-size: 21px;
+            }
+        }
+        
+        .banner__link {
+            background: linear-gradient(247.59deg, #A90722 14.94%, #EF0D33 85.74%);
+            border-radius: 8px;
+            padding: 15px 25px;
+            font-family: $fontPrimary;
+            font-style: normal;
+            font-weight: $weight-4;
+            font-size: $size-5;
+            line-height: 100%;
+            display: flex;
+            width: fit-content;
+            align-items: center;
+            margin: auto;
+            margin-bottom: 86px;
+
+            &:hover {
+                background: linear-gradient(-247.59deg, #A90722 14.94%, #EF0D33 85.74%);
+            } 
+            
+            @media (min-width: $tablet) {
+                margin: unset;
+            }
+
+            &::after {
+                content: "";
+                display: block;
+                width: 23px;
+                height: 23px;
+                margin-left: 8px;
+                background-image: url("data:image/svg+xml,%3Csvg width='23' height='24' viewBox='0 0 23 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.2' d='M19.9375 11.9242C19.9375 13.593 19.4426 15.2243 18.5155 16.6118C17.5884 17.9994 16.2706 19.0808 14.7289 19.7194C13.1871 20.358 11.4906 20.5251 9.85393 20.1996C8.21721 19.874 6.71379 19.0704 5.53379 17.8904C4.35378 16.7104 3.55019 15.207 3.22462 13.5703C2.89906 11.9336 3.06615 10.2371 3.70477 8.6953C4.34338 7.15355 5.42484 5.83579 6.81238 4.90867C8.19992 3.98155 9.83122 3.48669 11.5 3.48669C13.7378 3.48669 15.8839 4.37564 17.4662 5.95798C19.0486 7.54032 19.9375 9.68643 19.9375 11.9242Z' fill='white'/%3E%3Cpath d='M11.5 2.78357C9.69216 2.78357 7.92491 3.31966 6.42174 4.32404C4.91857 5.32843 3.747 6.756 3.05516 8.42623C2.36333 10.0965 2.18232 11.9343 2.53501 13.7074C2.8877 15.4805 3.75826 17.1093 5.0366 18.3876C6.31494 19.6659 7.94365 20.5365 9.71675 20.8892C11.4899 21.2419 13.3277 21.0609 14.998 20.369C16.6682 19.6772 18.0958 18.5056 19.1002 17.0025C20.1045 15.4993 20.6406 13.732 20.6406 11.9242C20.6381 9.50074 19.6742 7.17727 17.9606 5.46362C16.2469 3.74998 13.9235 2.78613 11.5 2.78357ZM11.5 19.6586C9.97029 19.6586 8.47492 19.205 7.20301 18.3551C5.9311 17.5052 4.93977 16.2973 4.35437 14.884C3.76897 13.4707 3.61581 11.9156 3.91424 10.4153C4.21267 8.91497 4.9493 7.53684 6.03097 6.45517C7.11264 5.37349 8.49078 4.63687 9.9911 4.33843C11.4914 4.04 13.0465 4.19317 14.4598 4.77856C15.8731 5.36396 17.081 6.35529 17.9309 7.62721C18.7808 8.89912 19.2344 10.3945 19.2344 11.9242C19.232 13.9748 18.4164 15.9407 16.9665 17.3907C15.5165 18.8406 13.5506 19.6562 11.5 19.6586ZM15.7188 11.9242C15.7188 12.1107 15.6447 12.2895 15.5128 12.4214C15.3809 12.5532 15.2021 12.6273 15.0156 12.6273H12.2031V15.4398C12.2031 15.6263 12.129 15.8051 11.9972 15.937C11.8653 16.0689 11.6865 16.1429 11.5 16.1429C11.3135 16.1429 11.1347 16.0689 11.0028 15.937C10.871 15.8051 10.7969 15.6263 10.7969 15.4398V12.6273H7.98438C7.79789 12.6273 7.61905 12.5532 7.48719 12.4214C7.35533 12.2895 7.28125 12.1107 7.28125 11.9242C7.28125 11.7377 7.35533 11.5589 7.48719 11.427C7.61905 11.2951 7.79789 11.2211 7.98438 11.2211H10.7969V8.40857C10.7969 8.22209 10.871 8.04325 11.0028 7.91139C11.1347 7.77952 11.3135 7.70544 11.5 7.70544C11.6865 7.70544 11.8653 7.77952 11.9972 7.91139C12.129 8.04325 12.2031 8.22209 12.2031 8.40857V11.2211H15.0156C15.2021 11.2211 15.3809 11.2951 15.5128 11.427C15.6447 11.5589 15.7188 11.7377 15.7188 11.9242Z' fill='white'/%3E%3C/svg%3E ");
+            }
+            a {
+                color: $white;
+            }
+        }
+    }
+}
+
+
+.branding__container {
+    background-color: #DA00F0!important;
+}
+
+
+.animation {
+    background-color: #E95433;
+    transform: skewX(-10deg);
+   
+    @media (min-width: $desktop-3) {
+        height: 40%;
+        animation: heightAnimation 5s ease-in-out;
+    }
+
+    @media (min-width: $tablet) and (max-width: $desktop-2) {
+        height: 15%;
+        animation: heightAnimationMedia 5s ease-in-out;
+    }
+
+    @media (max-width: $tablet) {
+        height: 10%;
+        animation: heightAnimationMediaMobile 10s ease-in-out;
+    }
+}
+
+
+
+@keyframes heightAnimation {
+    0% {
+        height: 0%;
+    }
+
+    40% {
+        height: 40%;
+    }
+}
+
+
+@keyframes heightAnimationMedia {
+    0% {
+        height: 0%;
+    }
+
+    15% {
+        height: 15%;
+    }
+}
+
+@keyframes heightAnimationMediaMobile {
+    0% {
+        height: 0%;
+    }
+
+    10% {
+        height: 10%;
+    }
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform:  rotate(360deg);
+    }
+}

@@ -1,0 +1,110 @@
+.contact {
+    margin: auto;
+    width: $max-width-lg;
+    padding-top: 64px;
+
+    .contact__main-title {
+        .contact__title {
+            font-family: $fontPrimary;
+            font-style: normal;
+            font-weight: $weight-5;
+            font-size: 42px;
+            line-height: 100%;
+            text-align: center;
+            color: $primary;
+        }
+
+        .contact__description {
+            font-family: $fontPrimary;
+            font-style: normal;
+            font-weight: $weight-2;
+            font-size: $size-5;
+            line-height: 150%;
+            text-align: center;
+            color: $secondary;
+            margin-bottom: 64px;
+        }
+    }
+
+    .contact__form {
+        @media (min-width: $tablet) {
+            margin: auto;
+            width: 50vw;
+            margin-bottom: 128px;
+        }
+
+        button {
+            border: none;
+            background: linear-gradient(247.59deg, #A90722 14.94%, #EF0D33 85.74%);
+            border-radius: 8px;
+            padding: 20px 25px;
+            font-family: $fontPrimary;
+            font-style: normal;
+            font-weight: $weight-4;
+            font-size: $size-5;
+            line-height: 100%;
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+            margin: auto;
+            width: fit-content;
+            margin-top: 32px;
+            color: $white;
+            cursor: pointer;
+        } 
+
+        .contact__form-control {
+            label {
+                font-family: $fontPrimary;
+                font-style: normal;
+                font-weight: $weight-2;
+                font-size: $size-5;
+                line-height: 150%;
+                color: $secondary;
+            }
+
+            input {
+                border: solid 1px #F7F7F7;
+                background: #F7F7F7;
+                border-radius: 10px;
+                padding: 20px;
+                outline: none;
+                font-family: $primary;
+                font-style: normal;
+                font-weight: $weight-2;
+                font-size: 14px;
+                line-height: 100%;
+                width: 100%;
+                margin-bottom: 32px;
+                margin-top: 5px;
+
+                @media (max-width: $tablet) {
+                    box-sizing: border-box;
+                    padding: 20px 15px;
+                }
+            }
+
+            textarea {
+                border: solid 1px #F7F7F7;
+                background: #F7F7F7;
+                border-radius: 10px;
+                padding: 20px;
+                outline: none;
+                font-family: $primary;
+                font-style: normal;
+                font-weight: $weight-2;
+                font-size: 14px;
+                line-height: 100%;
+                width: 100%;
+                resize: none;
+                margin-top: 8px;
+
+                @media (max-width: $tablet) {
+                    box-sizing: border-box;
+                    padding: 20px 15px;
+                }
+            }
+
+        }
+    }
+}

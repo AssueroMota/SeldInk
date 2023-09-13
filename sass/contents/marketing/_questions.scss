@@ -1,0 +1,119 @@
+.questions {
+    background: #F7F7F7;
+    padding-top: $padding-5;
+    padding-bottom: 64px;
+    .questions__col-left {
+        .title {
+            font-family: $fontPrimary;
+            font-style: normal;
+            font-weight: $weight-3;
+            font-size: $size-4-custom;
+            line-height: 105%;
+            text-align: center;
+            color: $primary;
+            margin-top: 20px;
+
+            @media (min-width: $tablet) {
+                margin-bottom: 10px;
+            }
+        }
+        
+        .description {
+            font-family: $fontPrimary;
+            font-style: normal;
+            font-weight: $weight-2;
+            font-size: $size-5;
+            line-height: 150%;
+            text-align: center;
+            color: $secondary;
+            @media (min-width: $tablet) {
+                margin-bottom: 64px;
+            }
+        }
+    }
+
+    .questions__col-right {
+        width: $max-width-s;
+        margin: auto;
+
+        @media (max-width: $tablet) {
+            width: $max-width-lg;
+        }
+
+        @media (min-width: $tablet) {
+            width: 50vw;    
+        }
+
+        .question-item {
+            background: $white;
+            border-radius: 10px;
+            padding:  10px 20px;
+            margin-bottom: 16px;
+            .ask {
+                font-family: $fontPrimary;
+                font-style: normal;
+                font-weight: $weight-4;
+                font-size: $size-5;
+                line-height: 120%;
+                color: $primary;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+            
+                @media (max-width: $tablet) {
+                    align-items: unset;
+                    padding-right: 24px;
+                }
+
+                @media (min-width: $tablet) {
+                    justify-content: space-between;
+                }
+
+                &.open {
+                    transition: all .3s ease-in-out;
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 20px;
+                        height: 21px;
+                        background-image: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_59_211' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='20' height='21'%3E%3Crect y='0.5' width='20' height='20' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_59_211)'%3E%3Cpath d='M10 13.3127L5 8.31266L6.16667 7.146L10 10.9793L13.8333 7.146L15 8.31266L10 13.3127Z' fill='%23E6E4DD'/%3E%3C/g%3E%3C/svg%3E%0A");
+                        transform: rotate(180deg);
+                        transition: all .3s ease-in-out;
+                        @media (max-width: $tablet) {
+                            width: 24px;
+                            position: absolute;
+                            right: 40px;
+                        }
+                    }
+                }
+
+                &.close {
+                    transition: all .3s ease-in-out;
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 20px;
+                        height: 21px;
+                        background-image: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_59_211' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='20' height='21'%3E%3Crect y='0.5' width='20' height='20' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_59_211)'%3E%3Cpath d='M10 13.3127L5 8.31266L6.16667 7.146L10 10.9793L13.8333 7.146L15 8.31266L10 13.3127Z' fill='%23E6E4DD'/%3E%3C/g%3E%3C/svg%3E%0A"); 
+                        transition: all .3s ease-in-out;                       
+                        @media (max-width: $tablet) {
+                            width: 24px;
+                            position: absolute;
+                            right: 35px;
+                        }
+                    }
+                }
+            }
+            .answer {
+                font-family: $fontPrimary;
+                font-style: normal;
+                font-weight: $weight-2;
+                font-size: $size-5;
+                line-height: 150%;
+                text-align: center;
+                color: $secondary;
+                text-align: left;
+            }
+        }
+    }
+}

@@ -1,0 +1,154 @@
+.since {
+    .since__container {
+        margin: auto;
+        width: 70%;
+
+        @media (max-width: $tablet) {
+            width: 95%;
+        }
+
+        .since__title {
+            h5 {
+                font-family: $fontPrimary;
+                font-style: italic;
+                font-weight: $weight-1;
+                font-size: 76px;
+                line-height: 100%;
+                text-transform: uppercase;
+                color: $white;
+                margin-bottom: 64px;
+                span {
+                    font-weight: $weight-5;
+                    color: $secondary;
+                }
+
+                @media (max-width: $mobile) {
+                    font-size: 48px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .since__container-cols {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            @media (max-width: $mobile) {
+                grid-template-columns: 1fr;
+            }
+
+            .since__col-left {
+                address {
+                    font-family: $fontPrimary;
+                    font-style: normal;
+                    font-weight: $weight-1;
+                    font-size: $size-5;
+                    line-height: 150%;
+                    letter-spacing: 0.06em;
+                    color: $secondary;
+                    margin-bottom: 32px;
+                }
+
+                a {
+                    font-family: $fontPrimary;
+                    font-style: normal;
+                    font-weight: $weight-1;
+                    font-size: $size-5;
+                    line-height: 150%;
+                    letter-spacing: 0.06em;
+                    text-decoration-line: underline;
+                    color: $white;
+                    display: flex;
+                    align-items: center;
+
+                    &::after {
+                        margin-left: 8px;
+                        content: "";
+                        display: block;
+                        width: 14px;
+                        height: 14px;
+                        background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_77_75' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='14' height='14'%3E%3Crect width='14' height='14' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_77_75)'%3E%3Cpath d='M3.73329 10.5001L2.91663 9.68341L8.51663 4.08341H3.49996V2.91675H10.5V9.91675H9.33329V4.90008L3.73329 10.5001Z' fill='%23F2F2F2'/%3E%3C/g%3E%3C/svg%3E%0A");
+                    }
+                }
+            }
+
+            .since__col-right {
+                p {
+                    font-family: $fontPrimary;
+                    font-style: normal;
+                    font-weight: $weight-1;
+                    font-size: $size-5;
+                    line-height: 150%;
+                    letter-spacing: 0.06em;
+                    color: $secondary;
+                }
+
+                @media (max-width: $mobile) {
+                    margin-top: 32px;
+                }
+            }
+        }
+
+        .since__container-photos {
+            margin-top: 64px;
+            .since__large-photos {
+                margin-bottom: 32px;
+                .grayed-out {
+                    filter: grayscale(100%);
+                    transition: filter 0.3s ease-in-out;
+                }
+                @media (max-width: $mobile) {
+                    margin-bottom: 16px;
+                }
+
+                img {
+                    width: 100%;
+                    filter: grayscale(1);
+                    transition: filter 0.4s ease-in-out;
+
+                    @media (max-width: $tablet) {
+                        filter: grayscale(0);
+                    }
+                    @media (min-width: $desktop-1) {
+                        &:hover {
+                            filter: grayscale(0);
+                            transition: filter 0.4s ease-in-out;
+                        }
+                    }
+                }
+            }
+
+            .since__small-photos {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 32px;
+
+                @media (max-width: $mobile) {
+                    .grayed-out {
+                        filter: grayscale(100%);
+                        transition: filter 0.3s ease-in-out;
+                    }
+
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 16px;
+                }
+
+                img {
+                    width: 100%;
+                    filter: grayscale(1);
+                    transition: filter 0.4s ease-in-out;
+
+                    @media (max-width: $tablet) {
+                        filter: grayscale(0);
+                    }
+                    @media (min-width: $desktop-1) {
+                        &:hover {
+                            filter: grayscale(0);
+                            transition: filter 0.4s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

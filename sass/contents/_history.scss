@@ -1,0 +1,119 @@
+.history  {
+    margin-top: 64px;
+    margin-bottom: 64px;
+
+    @media (max-width: $tablet) {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .history__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
+        margin: auto;
+        width: 70%;
+
+        @media (min-width: $tablet) and (max-width: $desktop-3) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (max-width: $tablet) {
+            width: 95%;
+            grid-template-columns: 1fr;
+        }
+
+        .history__columns {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .history__columns-1 {
+                h2 {
+                    font-family: $fontPrimary;
+                    font-style: italic;
+                    font-weight: $weight-1;
+                    font-size: $size-10;
+                    line-height: 100%;
+                    text-transform: uppercase;
+                    color: $white;
+                    margin-bottom: 64px;
+
+                    @media (max-width: $tablet) {
+                        margin-top: 120px;
+                    }
+
+                    span {
+                        font-weight: $weight-6;
+                        color: $secondary;
+                    }
+                }
+
+                p {
+                    font-family: $fontPrimary;
+                    font-style: normal;
+                    font-weight: $weight-1;
+                    font-size: $size-5;
+                    line-height: 150%;
+                    letter-spacing: 0.06em;
+                    color: $secondary;
+                }
+            }
+
+            .history__columns-2 {
+                h2 {
+                    font-family: $fontPrimary;
+                    font-style: italic;
+                    font-weight: $weight-1;
+                    font-size: $size-10;
+                    line-height: 100%;
+                    text-transform: uppercase;
+                    color: $white;
+                    margin-bottom: 64px;
+                    margin-top: 64px;
+
+                    span {
+                        font-weight: $weight-6;
+                        color: $secondary;
+                    }
+                }
+
+                p {
+                    font-family: $fontPrimary;
+                    font-style: normal;
+                    font-weight: $weight-1;
+                    font-size: $size-5;
+                    line-height: 150%;
+                    letter-spacing: 0.06em;    
+                    color: $secondary;
+
+                    a {
+                        font-family: $fontPrimary;
+                        font-weight: $weight-3;
+                        color: $secondary;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .history__columns-image {
+            img {
+                width: 100%;
+
+                @media (max-width: $tablet) {
+                    margin-top: 64px;
+                }
+            }
+        }
+    }    
+
+
+    img {
+        @media (min-width: $tablet) and (max-width: $desktop-3) {
+            width: 100%;
+        }   
+    }
+
+}

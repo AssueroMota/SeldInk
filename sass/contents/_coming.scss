@@ -1,0 +1,116 @@
+.coming {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media (max-width: $tablet) {
+        grid-template-columns: 1fr;
+    }
+    .coming__chair {
+        text-align: center;
+        border: solid 1px $secondary;
+        border-left: none;
+        text-align: center;
+        padding: 29px 0 100px 0;
+        border-right: 0;
+        .title {
+            font-family: $fontPrimary;
+            font-style: italic;
+            font-weight: $weight-1;
+            font-size: 76px;
+            line-height: 100%;
+            text-align: center;
+            text-transform: uppercase;
+            color: $white;
+            margin-bottom: 0;
+            user-select: none;
+            @media (max-width: $tablet) {
+                font-size: 48px;
+            }
+
+            .chair {
+                font-family: $fontPrimary;
+                font-style: italic;
+                font-weight: $weight-6;
+                font-size: 76px;
+                line-height: 100%;
+                text-align: center;
+                text-transform: uppercase;
+                color: $secondary;
+                margin-bottom: 0;
+                user-select: none;
+                @media (max-width: $tablet) {
+                    font-size: 48px;
+                }
+            }
+        }
+
+        .content {
+            font-family: $fontPrimary;
+            font-style: italic;
+            font-weight: $weight-1;
+            font-size: 17px;
+            line-height: 100%;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: $secondary;
+            margin-top: 0;
+            user-select: none;
+        }
+    }
+
+    .coming__rental {
+        border: solid 1px $secondary;
+        text-align: center;
+        padding: 29px 0 100px 0;
+        border-right: none;
+        .title {
+            font-family: $fontPrimary;
+            font-style: italic;
+            font-weight: $weight-1;
+            font-size: 76px;
+            line-height: 100%;            
+            text-align: center;
+            text-transform: uppercase;
+            color: $white;
+            margin-bottom: 0;
+            user-select: none;
+            @media (max-width: $tablet) {
+                font-size: 48px;
+            }
+
+            .rental {
+                font-family: $fontPrimary;
+                font-style: italic;
+                font-weight: $weight-6;
+                font-size: 76px;
+                line-height: 100%;
+                text-align: center;
+                text-transform: uppercase;
+                color: $secondary;
+                margin-bottom: 0;
+                user-select: none;
+                @media (max-width: $tablet) {
+                    font-size: 48px;
+                }
+            }
+        }
+
+        .content {
+            font-family: $fontPrimary;
+            font-style: italic;
+            font-weight: $weight-1;
+            font-size: 17px;
+            line-height: 100%;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: $secondary;
+            margin-top: 0;
+            user-select: none;
+        }
+    }
+}
+
+.detail-content-2-1 {
+    margin-bottom: 64px;
+}

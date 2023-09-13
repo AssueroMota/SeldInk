@@ -1,0 +1,236 @@
+.offers {
+    margin: auto;
+    width: $max-width-xg;
+    margin-top: 110px;
+
+    @media (max-width: $tablet) {
+        margin-top: 100px;
+    }
+    .offers__title-content {
+        margin-bottom: 64px;
+        h1 {
+            font-family: $fontPrimary;
+            font-style: normal;
+            font-weight: $weight-5;
+            font-size: $size-11;
+            line-height: 100%;
+            text-align: center;
+            color: $primary;
+            margin-top: 25px;
+        }
+
+        .offers__description {
+            font-family: $fontPrimary;
+            font-style: normal;
+            font-weight: $weight-2;
+            font-size: $size-5;
+            line-height: 150%;
+            text-align: center;
+            color: $secondary;
+        }
+
+        .offers__line {
+            height: 2px;
+            width: 50px;
+            background-color: $tertiary;
+            display: flex;
+            margin: auto;
+        }
+
+
+        .offers__content {
+            display: grid;
+            grid-template-columns: 1fr 5.4fr;
+            align-items: self-start;
+            width: 80%;
+            margin: auto;
+            column-gap: 40px;
+
+            @media (max-width: $tablet){
+                grid-template-columns: 1fr;
+                width: $max-width-lg;
+                font-size: 48px;
+                text-align: center;
+            }
+            
+            .offers__content-link {
+                margin-top: 25px;
+                margin-bottom: 62px;
+                @media (max-width: $tablet) {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                a {
+                    padding: 17px 52px;
+                    background: $white;
+                    border-radius: 2px;
+                    font-family: $fontPrimary;
+                    font-style: normal;
+                    font-weight: $weight-3;
+                    font-size: $size-5;
+                    line-height: 100%;
+                    letter-spacing: 0.06em;
+                    color: $primary;
+                    display: flex; 
+                    align-items: center;
+                    width: fit-content;
+
+                    &::after {
+                        margin-left: 10px;
+                        content: "";
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_17_192' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='20' height='20'%3E%3Crect width='20' height='20' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_17_192)'%3E%3Cpath d='M14.5833 13.75L13.3958 12.5833L15.1458 10.8333H2.5V9.16667H15.1458L13.4167 7.41667L14.6042 6.25L18.3333 10L14.5833 13.75Z' fill='%23101820'/%3E%3C/g%3E%3C/svg%3E%0A");
+                    }
+                }
+            }
+
+            h2 {
+                font-family: $fontPrimary;
+                font-style: italic;
+                font-weight: $weight-1;
+                font-size: 76px;
+                line-height: 100%;
+                text-transform: uppercase;
+                color: $white;
+                margin-top: 0;
+                text-align: right;
+
+                @media (max-width: $tablet) {
+                    font-size: 48px;
+                    text-align: center;
+                }
+            }
+        }
+
+        p {
+            font-family: $fontPrimary;
+            font-style: normal;
+            font-weight: $weight-1;
+            font-size: 17px;
+            line-height: 165%;
+            letter-spacing: 0.06em;
+            color: $secondary;
+            margin-top: 0;
+        }
+
+    }
+
+    .offers__link {
+        background: linear-gradient(247.59deg, #A90722 14.94%, #EF0D33 85.74%);
+        border-radius: 8px;
+        padding: 20px 25px;
+        font-family: $fontPrimary;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        margin: auto;
+        width: fit-content;
+        margin-top: 55px;
+
+        &:hover {
+            background: linear-gradient(-247.59deg, #A90722 14.94%, #EF0D33 85.74%);
+        }
+            
+        a {
+            color: $white;
+        }
+    }
+
+    .offers__column-right {
+        margin: auto;
+        width: $max-width-xg;
+
+        @media (min-width: $tablet) {
+            display: flex;
+            column-gap: 32px;
+        }
+        
+        @media (max-width: $tablet){
+            display: grid;
+            grid-auto-flow: column;
+            overflow-x: auto;
+            padding-bottom: 20px;
+            column-gap: 8px;
+        }
+
+        .card {
+            background: $primary;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 25%;
+            @media (max-width: $tablet) {
+                max-width: 297px;
+                width: 297px;
+            }
+
+            @media (min-width: $tablet) {
+                text-align: left;
+            }
+
+            .title {
+                font-family: $fontPrimary;
+                font-style: normal;
+                font-weight: $weight-5;
+                font-size: $size-10;
+                line-height: 100%;  
+                color: $white;
+            }
+
+            .content {
+                font-family: $fontPrimary;
+                font-style: normal;
+                font-weight: $weight-2;
+                font-size: $size-5;
+                line-height: 150%;
+                color: $white;
+            }
+
+            a {
+                font-family: $fontPrimary;
+                font-style: normal;
+                font-weight: $weight-4;
+                font-size: $size-5;
+                line-height: 120%;
+                color: $white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @media (min-width: $tablet) {
+                    justify-content: flex-start;
+                }
+
+                &::after {
+                    margin-left: 8px;
+                    content: "";
+                    display: block;
+                    width: 14px;
+                    height: 14px;
+                    background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.93453 7.30953L5.55953 11.6845C5.51888 11.7252 5.47063 11.7574 5.41752 11.7794C5.36441 11.8014 5.30748 11.8127 5.25 11.8127C5.19251 11.8127 5.13559 11.8014 5.08248 11.7794C5.02937 11.7574 4.98112 11.7252 4.94047 11.6845C4.89982 11.6439 4.86758 11.5956 4.84558 11.5425C4.82358 11.4894 4.81226 11.4325 4.81226 11.375C4.81226 11.3175 4.82358 11.2606 4.84558 11.2075C4.86758 11.1544 4.89982 11.1061 4.94047 11.0655L9.00648 7L4.94047 2.93453C4.85837 2.85244 4.81226 2.7411 4.81226 2.625C4.81226 2.5089 4.85837 2.39756 4.94047 2.31547C5.02256 2.23338 5.1339 2.18726 5.25 2.18726C5.3661 2.18726 5.47744 2.23338 5.55953 2.31547L9.93453 6.69047C9.97521 6.7311 10.0075 6.77935 10.0295 6.83246C10.0515 6.88557 10.0628 6.9425 10.0628 7C10.0628 7.05749 10.0515 7.11442 10.0295 7.16754C10.0075 7.22065 9.97521 7.2689 9.93453 7.30953Z' fill='white'/%3E%3C/svg%3E%0A");
+                }
+            }
+        }
+    }
+}
+
+.offers__content-styled {
+    font-family: $fontPrimary;
+    font-style: italic;
+    font-weight: $weight-6!important;
+    font-size: 76px;
+    line-height: 100%;
+    text-align: right;
+    text-transform: uppercase;
+    color: $secondary!important;
+
+    @media (max-width: $tablet) {
+        font-size: 48px;
+    }
+}

@@ -1,0 +1,10 @@
+<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="nav / trending_flat">
+<mask id="mask0_964_1154" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="14" height="14">
+<rect id="Bounding box" width="14" height="14" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_964_1154)">
+<path id="trending_flat" d="M10.2083 9.625L9.37708 8.80833L10.6021 7.58333H1.75V6.41667H10.6021L9.39167 5.19167L10.2229 4.375L12.8333 7L10.2083 9.625Z" fill="#F2F2F2"/>
+</g>
+</g>
+</svg>

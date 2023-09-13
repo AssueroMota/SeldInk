@@ -1,0 +1,149 @@
+.price {
+    .price__title {
+        .price__content-title {
+            font-family: $fontPrimary;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 42px;
+            line-height: 100%;
+            text-align: center;
+            color: $primary;
+
+            @media (min-width: $tablet) {
+                margin-top: 128px;
+                margin-bottom: 64px;
+            }
+        }
+    }
+
+    .price__cards {
+        @media (min-width: $tablet) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 30px;
+            margin: 0 auto 128px;
+            width: $max-width-xg;
+        }
+
+        @media (min-width: $desktop-1) and (max-width: 1440px){
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 25px;
+        }
+
+        .price__card {
+            margin: auto;
+            width: $max-width-lg;
+            background: rgba(136, 136, 136, 0.02);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 1px 10px 30px 10px;
+
+            @media (max-width: $tablet) {
+                margin-bottom: 30px;
+            }
+
+            @media (min-width: $tablet) {
+                width: unset;
+                height: auto;
+            }
+
+            .price__card-main-title {
+                font-family: $fontPrimary;
+                font-style: normal;
+                font-weight: $weight-5;
+                font-size: $size-10;
+                line-height: 100%;
+                text-align: center;
+                color: $primary;
+            }
+
+            .price__card-small-description {
+                font-family: $fontPrimary;
+                font-style: normal;
+                font-weight: $weight-2;
+                font-size: $size-5;
+                line-height: 150%;
+                text-align: center;
+                color: $secondary;
+                margin: auto;
+                width: 90%;
+            }
+
+            .price__card-subtitle {
+                font-family: $fontPrimary;
+                font-style: normal;
+                font-weight: $weight-4;
+                font-size: 21px;
+                line-height: 100%;
+                color: $primary;
+            }
+
+            .price__card-list {
+                padding-left: 40px; 
+                @media (min-width: $tablet) {
+                    min-height: 409px;    
+                }
+
+                li {
+                    font-family: $fontPrimary;
+                    font-style: normal;
+                    font-weight: $weight-2;
+                    font-size: $size-5;
+                    line-height: 150%;
+                    color: $secondary;
+                    list-style: disc!important;
+                }
+            }
+
+            .price__card-item-1 {
+                .price {
+                    font-family: $fontPrimary;
+                    font-style: normal;
+                    font-weight: $weight-5;
+                    font-size: 36px;
+                    line-height: 100%;
+                    text-align: center;
+                    color: $tertiary;
+                    margin-bottom: 8px;
+                }
+
+                .tag {
+                    font-family: $fontPrimary;
+                    font-style: normal;
+                    font-weight: $weight-4;
+                    font-size: $size-5;
+                    line-height: 100%;
+                    text-align: center;
+                    color: $secondary;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+
+            .price__card-item-2 {
+                display: flex;
+                justify-content: center;
+                background: linear-gradient(247.59deg, #A90722 14.94%, #EF0D33 85.74%);
+                border-radius: 8px;
+                padding: 20px 25px;
+                font-family: $fontPrimary;
+                font-style: normal;
+                font-weight: $weight-4;
+                font-size: $size-5;
+                line-height: 100%;
+                display: flex;
+                align-items: center;
+                margin: 25px auto 0;
+                width: 334px;
+
+                @media (max-width: $tablet) {
+                    width: 80%;
+                }
+
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
+}

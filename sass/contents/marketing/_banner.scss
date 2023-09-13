@@ -1,0 +1,61 @@
+.banner_marketing {
+    margin-left: 0;
+    margin-right: 0!important;
+    width: 100%;
+
+    @media (max-width: $tablet) {
+        padding-top: 53px;    
+    }
+
+    @media (min-width: $tablet) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        column-gap: 120px;
+        padding-top: 89px;
+    }
+
+    .banner__column-right {
+        margin: auto;
+        margin-top: 32px;
+        display: flex;
+        justify-content: center;
+        color: $white;
+        @media (min-width: $tablet) {
+            margin: unset;
+        }
+
+        .banner__title {
+            font-family: $fontPrimary;
+            font-style: normal;
+            font-weight: $weight-5;  
+            font-size: 62px;
+            line-height: 100%;
+            text-align: center;
+            color: $white;
+        }  
+    }   
+}
+
+
+.banner__dev {
+    .banner_development {
+        background-color: #24F0BE!important;
+    }
+}
+
+.banner_marketing {
+    background-color: #F08F24;
+}
+
+.banner_business {
+    background-color: #3854D6;
+}
+
+.banner_consult {
+    .banner_consultant {
+        background-color: $primary;
+    }
+}

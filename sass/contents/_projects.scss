@@ -1,0 +1,27 @@
+.dynamic {
+    @media (min-width: 1720px){
+        margin: auto;
+        width: 95%;
+    }
+
+    @media (min-width: $tablet) and (max-width: $desktop-2){
+        margin: auto;
+        width: 90%;
+    }
+    
+    @media (max-width: $tablet) {
+        margin: auto;
+        width: $max-width-lg;
+    }
+
+    .slide-item {
+        border: none;
+        outline: none;
+
+        img {
+            @media (max-width: $tablet) {
+                width: 100%;
+            }
+        }
+    }
+}

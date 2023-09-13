@@ -1,0 +1,37 @@
+.banner__contact {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet){
+        padding-bottom: 170px;
+        padding-top: 230px;
+    }
+
+    .banner__contact-content {
+        .banner__contact-content-title {
+            color: $white;
+            text-align: center;
+            font-family: $fontPrimary;
+            font-size: 76px;
+            font-style: italic;
+            font-weight: $weight-1;
+            line-height: 100%;
+            text-transform: uppercase;
+
+            @media (max-width: $tablet) {
+                margin-bottom: 0;
+                padding: 100px 0 58px 0;
+                color: $white;
+                text-align: center;
+                font-family: $fontPrimary;
+                font-size: 50px;
+                font-style: italic;
+                font-weight: $weight-1;
+                line-height: 100%;
+                text-transform: uppercase;
+                padding: 159px 0 93px 0;
+            }
+        }
+    }
+}

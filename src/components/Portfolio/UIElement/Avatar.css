@@ -1,0 +1,18 @@
+.avatar {
+    position: fixed;
+    transform-origin: 50% 50%;
+    transform: scale(1.5) translate(-30%, -30%);
+    top: 50%;
+    left: 48.2%;
+    z-index: 2;
+    box-shadow: 1px 1px 30px rgba(0,0,0, .1);
+    transition: all .9s ease-in-out;
+    border: 1px solid #5252526b;
+}
+
+.avatar-image {
+    transition: all .9s ease-in-out;
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
